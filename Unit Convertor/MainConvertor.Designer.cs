@@ -409,7 +409,7 @@ namespace Unit_Convertor
             this.guna2GradientButton15.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton15.HoverState.Parent = this.guna2GradientButton15;
             this.guna2GradientButton15.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton15.Image")));
-            this.guna2GradientButton15.Location = new System.Drawing.Point(710, 0);
+            this.guna2GradientButton15.Location = new System.Drawing.Point(709, 0);
             this.guna2GradientButton15.Name = "guna2GradientButton15";
             this.guna2GradientButton15.ShadowDecoration.Parent = this.guna2GradientButton15;
             this.guna2GradientButton15.Size = new System.Drawing.Size(35, 23);
@@ -480,9 +480,8 @@ namespace Unit_Convertor
             this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(178, 230);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 23);
+            this.label2.Size = new System.Drawing.Size(0, 23);
             this.label2.TabIndex = 19;
-            this.label2.Text = "길이";
             // 
             // MainConvertor
             // 

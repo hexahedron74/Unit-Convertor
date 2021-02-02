@@ -77,8 +77,34 @@ namespace Unit_Convertor
         {
           if (combobox1.Text == "단위를 선택하세요" && combobox2.Text == "단위를 선택하세요")
           {
-           MessageBox.Show("단위를 선택하셔야 합니다.", "Error[01]");
+           MessageBox.Show("단위를 선택하셔야 합니다.", "Error[01]", MessageBoxButtons.OK, MessageBoxIcon.Error);
            }
+
+          if(string.IsNullOrWhiteSpace(textbox1.Text))
+            {
+                MessageBox.Show("숫자를 입력하셔야 합니다.", "Error[02]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+          if(combobox1.Text == "킬로미터" && combobox2.Text == "킬로미터")
+            {
+                result.Text = textbox1.Text;
+                label2.Text = "공식: 길이 값에 1을 곱합니다.";
+            }
+            if (combobox1.Text == "킬로미터" && combobox2.Text == "미터")
+            {
+                result.Text = Convert.ToString(Convert.ToDouble(textbox1.Text) * 1000);
+                label2.Text = "공식: 길이 값에 1000을 곱합니다.";
+            }
+            if (combobox1.Text == "킬로미터" && combobox2.Text == "센티미터")
+            {
+                result.Text = Convert.ToString(Convert.ToDouble(textbox1.Text) * 10000);
+                label2.Text = "공식: 길이 값에 10000을 곱합니다.";
+            }
+            if (combobox1.Text == "킬로미터" && combobox2.Text == "밀리미터")
+            {
+                result.Text = Convert.ToString(Convert.ToDouble(textbox1.Text) * 1e+6);
+                label2.Text = "공식: 길이 값에 1e+6을 곱합니다.";
+            }
         }
     }
 }
